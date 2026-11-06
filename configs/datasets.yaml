@@ -1,0 +1,34 @@
+# Opinion-dynamics dataset configuration
+# Paths are relative to the repository root unless absolute.
+
+datasets:
+  ConspiracyAI:
+    path: data/unified/conspiracyai.jsonl
+    adapter: ConspiracyAI
+    enabled: true
+  DEBATE:
+    path: data/unified/debate.jsonl
+    adapter: DEBATE
+    enabled: true
+  PersuasionTrace:
+    path: data/unified/persuasiontrace.jsonl
+    adapter: PersuasionTrace
+    enabled: true
+  AnthropicPersuasion:
+    path: data/unified/anthropicpersuasion.jsonl
+    adapter: AnthropicPersuasion
+    enabled: true
+  CMV:
+    path: data/unified/cmv.jsonl
+    adapter: CMV
+    enabled: true
+  DebateGPT:
+    path: data/unified/debategpt.jsonl
+    adapter: DebateGPT
+    enabled: true
+
+# Default loading options
+options:
+  splits: [train, val, test]
+  exclude_control: false
+  validate: true

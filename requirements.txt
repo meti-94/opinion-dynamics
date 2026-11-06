@@ -1,0 +1,15 @@
+# Python 3.13 venv:  python3.13 -m venv .venv && .venv/bin/pip install -r requirements.txt
+#
+# Preprocessing scripts (data/unified generation):
+huggingface_hub>=0.26
+pandas>=2.0
+# preprocess_cmv.py loads the ConvoKit winning-args-corpus (certifi: python.org builds lack CA certs).
+convokit>=3.0
+certifi
+#
+# Participant-episode framework (src/opinion_dynamics):
+pyyaml>=6.0
+datasets>=2.14
+pytest>=7.0
+jupyter>=1.0
+ipykernel>=6.0
